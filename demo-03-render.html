@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello Wilmar</title>
+    <script src="react.development.js"></script>
+    <script src="react-dom.development.js"></script>
+    <script src="babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function tick() {
+        const element = (
+          <div>
+            <h1>Hello, Wilmar!</h1>
+            <h2>北京时间：{new Date().toLocaleTimeString()}.</h2>
+          </div>
+        );
+        ReactDOM.render(
+          element,
+          document.getElementById('root')
+        );
+      }
+
+      setInterval(tick, 1000);
+    </script>
+  </body>
+</html>
